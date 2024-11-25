@@ -1,0 +1,58 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>testcases.RestAssured_TestCases_PL2.searchPatientTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of all the users that contain the string in their name.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.AdmittedPatientsData<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch a list of currently Admitted Patients Data.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of Patient Admission Id, Admitted Date but Discharged Date must be null</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.addANewDepartment<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to add a new Department and fetch response details.
+2. Verify the response status code is 200.
+3. Verify Department code is not null. 
+3. Validate the response indicates successful display of department creation.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.GetProfileDataByEmployeeId<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch profile details.
+2. Verify the response status code is 200.
+3. Verify employee ID is not null. 
+3. Validate the response indicates successful display of account holder details.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.GetSignatoriesByDepartment<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to get signatories by department.
+2. Verify the response status code is 200.
+3. Verify that the EmployeeId, FirstName, LastName are not null from the response validating that the data is present.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.MainStoreTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch Main Store from the Pharmacy Settings.
+2. Verify the response status code is 200.
+3. Validate the response has an Id corresponding to the store along with the name and store description.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.BookingListTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.ActivatePharmacyCountTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Pre-conditions: Will require the counter Id and counterName to enter as a qeury paramter in the API. 
+1. Send a PUT request to see whether we are able to activate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of counter Id and counterName</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.DeactivatePharmCountTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a PUT request to fetch whether we are able to deactivate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of status code as 200.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.cancelAppointmentTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation.</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.GetImagingTypes<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to get imaging types.
+2. Verify the response status code is 200.
+</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.AppointApplicDeptTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to fetch a list of Appointment Applicable Departments.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of department name, department id, department code</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.createAppointmentTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains 'Status' as 'OK'
+4. Retrieve and validate the Appointment ID from the response</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.GetDepartments<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>1. Send a GET request to get the list of departments.
+2. Verify the response status code is 200.
+3. Verify the department codes are unique.
+</i></td></tr>
+<tr><td>testcases.RestAssured_TestCases_PL2.PharmacyStoreTest<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>Precondition: Some Pharmacy Stores must be created already. 
+1. Send a GET request to fetch whether we are able to fetch the pharmacy stores or not.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of name of the store along with Store Id.</i></td></tr>
+</table>
