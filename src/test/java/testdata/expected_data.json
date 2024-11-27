@@ -1,0 +1,233 @@
+{
+	"healthApp":{
+		"dasboardTitle":"DanpheHealth",
+		"pageUrl":"https://healthapp.yaksha.com/Home/Index#/",
+		"addNewpatientPopupTextValue":"Add New Patient",
+		"CounterPageUrl":"https://healthapp.yaksha.com/Home/Index#/Dispensary/ActivateCounter",
+		"SalePageUrl":"https://healthapp.yaksha.com/Home/Index#/Dispensary/Sale/New"
+		
+	},
+	"YakshaHealthApp":{
+		"SearchBarName":"Sonia Gandhi"
+	},
+	"addNewPatientPopup":{
+		"firstName":"Surya",
+		"middleName":"Prakash",
+		"lastName":"Nayak",
+		"age":"27",
+		"contact":"9124564060",
+		"registerOnlyButtonValue":"Register Only",
+		"selectedCountryName":"India",
+		"errorMessageOfRegisterBilling":"Some of the inputs are invalid. Please check and try again. !"
+	},
+	"KeyBoardTooltip":{
+		"newPatientTooltipValue":"ALT + N = New Patient"
+	},
+	"healthAppErrorMessages":{
+		"FirstNameFieldErrorMessage":"First Name is required.",
+		"LastNameFieldErrorMessage":"Last Name is required",
+		"ConfirmationMessage":"Are you sure you want to Proceed ?"
+	},
+	"commonStringvalue":{
+		"createRequisitionsButtonValue":"Create Requisition ",
+		"autoSuggestionsValue":"Sonia"
+	},
+    "NewSSUPatientRegistrationPopup":{
+		"firstName":"Abhisek",
+		"middleName":"Mohanta",
+		"lastName":"Invincix",
+		"age":"24",
+		"phoneNo.":"7008777971",
+		"invalidPhoneNo.":"abhisek",
+		"invalidPhoneNoError":"Primary Phone is not proper",
+		"warnningMessage":"Membership Scheme(s) is Mandatory.",
+		"AddressFieldPlaceHolder":"Address",
+		"RaceFieldPlaceHolder":"race",
+		"chooseTargetGroupDropdownFieldPlaceHolder":"Choose Target Group"
+	},
+
+	"allExpectedCountryOptions": [
+        "Nepal", "Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
+        "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
+        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", 
+        "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina",
+        "Botswana", "Brazil", "Brunei Darussalam", "Bulgaria", "Burkina Faso", 
+        "Burundi", "Cambodia", "Cameroon", "Canada", "Cabo Verde", "Central African Republic",
+        "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Republic of the",
+        "Congo, the Democratic Republic of the", "Costa Rica", "Côte d'Ivoire",
+        "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica",
+        "Dominican Republic", "East Timor", "Ecuador", "Egypt", "Equatorial Guinea",
+        "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", 
+        "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala",
+        "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hongkong", "Hungary",
+        "Iceland", "India", "Indonesia", "Iran, Islamic Republic of", "Iraq", "Ireland",
+        "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati",
+        "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon", 
+        "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg",
+        "Macedonia, The Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia",
+        "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", 
+        "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco",
+        "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru",
+        "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman",
+        "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines",
+        "Poland", "Portugal", "Qatar", "Romania", "Russian Federation", "Rwanda", 
+        "Saint Kitts and Nevis", "Saint Lucia", "Samoa", "San Marino", "Sao Tome and Principe",
+        "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore",
+        "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain",
+        "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", 
+        "Syrian Arab Republic", "Taiwan", "Tajikistan", "Tanzania, United Republic of", "Thailand",
+        "Timor-Leste", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey",
+        "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates",
+        "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu",
+        "Venezuela, Bolivarian Republic of", "Vietnam", "Western Sahara",  
+        "Yemen", "Zambia", "Zimbabwe", "South Korea"
+    ],
+    "ProcurementModule":{
+		"shortNameTextField":"Yakshaa",
+		"searchBarData":"Accounts"
+	},
+    "operationTheatreModuleStringValue":{
+		"newOTButtonValue":"New OT Booking",
+		"searchBarData":"Suriiyaa",
+        "bookingOTSchedulePageName":"Booking OT Schedule | New Patient",
+        "patientName" : "surya prakash",
+        "diagnosisValue" : "Food Allergy",
+        "surgeryTypeValue" : "Emergency Surgery",
+        "remarksPlaceHolderName" : "Remarks",
+        "surgenNameValue1" : "Dr. pooja Mishra",
+        "surgenNameValue2" : " Dr. pooja Mishra  "
+	},
+	"addExternalReferralPageInfo":{
+		"referrerName":"Surya",
+		"ExtRefferaddress":"INVINCIX",
+		"contactNum":"9124564060",
+		"email":"surya@gmail.com",
+		"successNotificationPopupMessage":"Sucess Updated."
+	},
+	"PageTitle":{
+		"AddNewPatientPageTitle":"Add New Patient",
+		"AddRequisitionPageName":"Add Requisition",
+		"pageNameAfterClickingOnView":"REQUISITION DETAILS PRINT"
+	},
+	"percentageValue":{
+		"vatInPercentageValue":"10"
+	},
+	"socialServiceModuleStringValue":{
+		"newSSUPatientRegistration":"New SSU Patient Registration",
+		"cottonSubCategoryName": "cotton",
+		"idNameOfeditInformationtexbox": "allPatWithOutIns",
+		"editInformationOfExistingPatientName" : "Suriiyaa"
+	},
+	"NewSSUPatientRegistrationForm":{
+		"firstName":"Surya",
+		"middleName":"Prakash",
+		"lastName":"Nayak",
+		"selectedCountryName":"India",
+		"HasTargetGroupCertificate?Yes":"Yes",
+		"targetGroupCertificateType":"Provisional",
+		"certificateNo": "C123A"
+	},
+	"operationTheatreModule":{
+		"hospitalNumber":"Hospital Number",
+		"errorMessageOfAddExternalReferralForms": "Referrer Name is required",
+		"remarksValue" : "remarks",
+		"idLocatorsValueOfremarkTextbox": "HandoverRemarks_User",
+		"titleNameOfVaccinationPatientRegisterForm": "Vaccination Patient Register",
+		"visitTypeOptionValue": "Follow-Up Patient",
+		"errorNotificationPopupMessage":"Failed Failed!! Cannot create appointment. Check the Details Correctly.",
+		"otAssistantName":"pooja",
+		"expectedOTAssistantName":"Dr. pooja Mishra",
+		"iframeTextValue":"Hi... Suriiyaa"
+	},
+	"Pharmacy": {
+		"URL": "https://healthapp.yaksha.com/Home/Index#/Pharmacy/Dashboard",
+		"itemname":"test",
+		"batchnumber":"123123",
+		"quantity":"5",
+		"rate":"100",
+		"mrp":"50",
+		"favouriteIcon":"Remember this Date",
+		"supplierName":"Ashar & Company",
+		"goodReceiptUpdatedSuccessMsg":"Goods Receipt is Updated and Saved.",
+		"goodReceiptCancelledMsg":"Goods Receipt Canceled."
+	},
+	"verification" : {
+		"URL": "https://healthapp.yaksha.com/Home/Index#/Verification/Inventory/Requisition",
+		"favouriteIcon":"Remember this Date",
+		"vendorName":"Ashar & Company",
+		"status_1":"pending",
+		"status_2":"approved",
+		"status_3":"rejected",
+		"purchaseRequestApproveMessage": "Requisition is approved successfully.",
+		"purchaseRequestRejectMessage": "Requisition is rejeceted successfully.",
+		"remarks":"Test Remarks",
+		"remarksCompulsaryForCancellation":"Remarks is Compulsory for Cancellation"
+	},
+	"inventory":{
+		"vendorName":"Ashar & Company",
+		"itemName":"Pen",
+		"remarks":"Test Remarks",
+		"purchaseRequestCreationMessage":"Purchase Order Requisition is Generated and Saved",
+		"itemNameReq":"Item is required"
+	},
+	"radiology":{
+		"URL": "https://healthapp.yaksha.com/Home/Index#/Radiology/ImagingRequisitionList",
+		"favouriteIcon":"Remember this Date",
+		"filmTypeFieldMessage":"FilmType Is Required",
+		"scanUpdatedMessage":"Scan detail Updated",
+		"reportUpdatedMessage":"Report Added Successfully",
+		"reportEditedMessage":"Report Updated Successfully",
+		"failedReportMessage":"Please enter some report text",
+		"patientName":"Test Patient 3 Radiology",
+		"imagingName":"USG Chest",
+		"type":"X-RAY",
+		"imagingLabAddSuccessMsg":"Imaging and lab order add successfully",
+		"cancellationRemarksMsg":"Please Write Cancellation Remarks"
+	},
+	"medicalRecord":{ 
+		"URL": "https://healthapp.yaksha.com/Home/Index#/Medical-records/InpatientList",
+		"warningMessage":"Please fill the birth details first!!!!",
+		"diagnosisCode":"2B72",
+		"favouriteIcon":"Remember this Date",
+		"finalDiagValue":""
+	},
+	"createBirthCertificate":{
+	"case": "General",
+	"requestingDepartment": "Cardiology",
+	"doctor": "Dr. pooja Mishra",
+	"ward": "Female Ward",
+	"bedFeature": "FEMALE WARD",
+	"bed": "Female Ward-002",
+	"conditionOfBirth": "Live Birth",
+	"gender": "Female",
+	"weight": "2000"
+	},
+	"createNewPatient":{
+	"firstName": "First",
+	"lastName": "Last",
+	"religion": "Others",
+	"age": "25",
+	"gender": "Female",
+	"department": "Cardiology",
+	"doctor": "Dr. pooja Mishra"
+	},
+	"maternityRecord":{
+	"URL": "https://healthapp.yaksha.com/Home/Index#/Maternity/PatientList",
+	"favouriteIcon":"Remember this Date",
+	"detailsUpdateMsg":"Patient details updated successfully.",
+	"ancUpdatedMsg":"ANC successfully Updated",
+	"matRegisterMsg":"Registered successfully.",
+	"concludedMsg":"Successfully Concluded.",
+	"removedMsg":"Successfully Removed."
+	},
+	"substore":{
+		"URL": "https://healthapp.yaksha.com/Home/Index#/WardSupply",
+		"favouriteIcon": "Remember this Date",
+		"requisitionGenerationMsg": "Requisition is Generated and Saved",
+		"itemsReceivedSuccessMsg":"Items Received Successfully.",
+		"consumptioCompletedMsg":"Consumption completed",
+		"returnMsg":"Return is Generated and Saved",
+		"moduleSignOutHoverText":"To change, you can always click here.",
+		"inventoryURL": "https://healthapp.yaksha.com/Home/Index#/WardSupply/Inventory/Stock"
+	}
+}

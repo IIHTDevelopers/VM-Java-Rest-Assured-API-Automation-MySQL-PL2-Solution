@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-27T13:43:01 IST" name="Suite" finished-at="2024-11-27T13:44:45 IST" duration-ms="103970">
+    <groups>
+      <group name="PL2">
+        <method signature="RestAssured_TestCases_PL2.createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="createAppointmentTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.cancelAppointmentTest()[pri:2, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="cancelAppointmentTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.searchPatientTest()[pri:3, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="searchPatientTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.BookingListTest()[pri:4, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="BookingListTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.MainStoreTest()[pri:5, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="MainStoreTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.PharmacyStoreTest()[pri:6, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="PharmacyStoreTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.ActivatePharmacyCountTest()[pri:7, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="ActivatePharmacyCountTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.DeactivatePharmCountTest()[pri:8, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="DeactivatePharmCountTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.AppointApplicDeptTest()[pri:9, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="AppointApplicDeptTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetProfileDataByEmployeeId()[pri:11, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetProfileDataByEmployeeId" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.addANewDepartment()[pri:12, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="addANewDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetDepartments()[pri:13, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetDepartments" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.EditDepartment()[pri:14, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="EditDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetImagingTypes()[pri:15, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetImagingTypes" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.AdmittedPatientsData()[pri:10, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="AdmittedPatientsData" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetSignatoriesByDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+      </group> <!-- PL2 -->
+    </groups>
+    <test started-at="2024-11-27T13:43:01 IST" name="Test" finished-at="2024-11-27T13:44:45 IST" duration-ms="103970">
+      <class name="testcases.RestAssured_TestCases_PL2">
+        <test-method signature="createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:02 IST" name="createAppointmentTest" description="Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains &#039;Status&#039; as &#039;OK&#039;
+4. Retrieve and validate the Appointment ID from the response" finished-at="2024-11-27T13:43:25 IST" duration-ms="23704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointmentTest -->
+        <test-method signature="searchPatientTest()[pri:3, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:32 IST" name="searchPatientTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of all the users that contain the string in their name." finished-at="2024-11-27T13:43:34 IST" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPatientTest -->
+        <test-method signature="BookingListTest()[pri:4, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:38 IST" name="BookingListTest" description="Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time." finished-at="2024-11-27T13:43:39 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookingListTest -->
+        <test-method signature="MainStoreTest()[pri:5, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:42 IST" name="MainStoreTest" description="1. Send a GET request to fetch Main Store from the Pharmacy Settings.
+2. Verify the response status code is 200.
+3. Validate the response has an Id corresponding to the store along with the name and store description." finished-at="2024-11-27T13:43:44 IST" duration-ms="1441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainStoreTest -->
+        <test-method signature="PharmacyStoreTest()[pri:6, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:47 IST" name="PharmacyStoreTest" description="Precondition: Some Pharmacy Stores must be created already. 
+1. Send a GET request to fetch whether we are able to fetch the pharmacy stores or not.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of name of the store along with Store Id." finished-at="2024-11-27T13:43:47 IST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PharmacyStoreTest -->
+        <test-method signature="ActivatePharmacyCountTest()[pri:7, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:51 IST" name="ActivatePharmacyCountTest" description="Pre-conditions: Will require the counter Id and counterName to enter as a qeury paramter in the API. 
+1. Send a PUT request to see whether we are able to activate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of counter Id and counterName" finished-at="2024-11-27T13:43:52 IST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivatePharmacyCountTest -->
+        <test-method signature="DeactivatePharmCountTest()[pri:8, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:43:56 IST" name="DeactivatePharmCountTest" description="1. Send a PUT request to fetch whether we are able to deactivate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of status code as 200." finished-at="2024-11-27T13:43:58 IST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeactivatePharmCountTest -->
+        <test-method signature="AppointApplicDeptTest()[pri:9, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:01 IST" name="AppointApplicDeptTest" description="1. Send a GET request to fetch a list of Appointment Applicable Departments.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of department name, department id, department code" finished-at="2024-11-27T13:44:04 IST" duration-ms="3358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointApplicDeptTest -->
+        <test-method signature="AdmittedPatientsData()[pri:10, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:08 IST" name="AdmittedPatientsData" description="1. Send a GET request to fetch a list of currently Admitted Patients Data.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of Patient Admission Id, Admitted Date but Discharged Date must be null" finished-at="2024-11-27T13:44:10 IST" duration-ms="2481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmittedPatientsData -->
+        <test-method signature="GetProfileDataByEmployeeId()[pri:11, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:13 IST" name="GetProfileDataByEmployeeId" description="1. Send a GET request to fetch profile details.
+2. Verify the response status code is 200.
+3. Verify employee ID is not null. 
+3. Validate the response indicates successful display of account holder details." finished-at="2024-11-27T13:44:15 IST" duration-ms="1589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProfileDataByEmployeeId -->
+        <test-method signature="addANewDepartment()[pri:12, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:18 IST" name="addANewDepartment" description="1. Send a GET request to add a new Department and fetch response details.
+2. Verify the response status code is 200.
+3. Verify Department code is not null. 
+3. Validate the response indicates successful display of department creation." finished-at="2024-11-27T13:44:20 IST" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addANewDepartment -->
+        <test-method signature="GetDepartments()[pri:13, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:23 IST" name="GetDepartments" description="1. Send a GET request to get the list of departments.
+2. Verify the response status code is 200.
+3. Verify the department codes are unique.
+" finished-at="2024-11-27T13:44:25 IST" duration-ms="1816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDepartments -->
+        <test-method signature="EditDepartment()[pri:14, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:28 IST" name="EditDepartment" description="1. Send a PUT request to edit the department details.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of department details with changes being present in the response." finished-at="2024-11-27T13:44:30 IST" duration-ms="1827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditDepartment -->
+        <test-method signature="GetImagingTypes()[pri:15, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:33 IST" name="GetImagingTypes" description="1. Send a GET request to get imaging types.
+2. Verify the response status code is 200.
+" finished-at="2024-11-27T13:44:34 IST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetImagingTypes -->
+        <test-method signature="GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:37 IST" name="GetSignatoriesByDepartment" description="1. Send a GET request to get signatories by department.
+2. Verify the response status code is 200.
+3. Verify that the EmployeeId, FirstName, LastName are not null from the response validating that the data is present." finished-at="2024-11-27T13:44:38 IST" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSignatoriesByDepartment -->
+        <test-method signature="cancelAppointmentTest()[pri:2, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:44:41 IST" name="cancelAppointmentTest" description="Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation." finished-at="2024-11-27T13:44:42 IST" depends-on-methods="testcases.RestAssured_TestCases_PL2.createAppointmentTest" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointmentTest -->
+      </class> <!-- testcases.RestAssured_TestCases_PL2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
