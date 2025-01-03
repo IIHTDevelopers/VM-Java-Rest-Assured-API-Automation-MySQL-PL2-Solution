@@ -446,22 +446,11 @@ public class ApiUtil {
 	 * @return CustomResponse - The response from the API after attempting to add a
 	 *         department.
 	 */
-	public CustomResponse addDepartment(String endpoint, Map<String, String> body) {
-
-		String departmentCode = body.get("DepartmentCode");
-		String departmentName = body.get("DepartmentName");
-
-		// Construct the JSON payload as a string
-		String requestBody = String.format(
-				"{\n" + "    \"DepartmentCode\": \"%s\",\n" + "    \"DepartmentName\": \"%s\"\n" + "}", departmentCode,
-				departmentName);
-
+	public CustomResponse addDepartment(String endpoint, Object body) {
 		// Send the POST request
-		Response response = RestAssured.given().header("Authorization", AuthUtil.getAuthHeader()) // Adding
-																									// authorization
-																									// header
+		Response response = RestAssured.given().header("Authorization", AuthUtil.getAuthHeader())
 				.header("Content-Type", "application/json") // Setting content type as JSON
-				.body(requestBody) // Adding the request payload as a JSON string
+				.body(body) // Adding the request payload as a JSON string
 				.post(BASE_URL + endpoint) // Sending POST request to the specified endpoint
 				.then().extract().response(); // Extracting the response
 
