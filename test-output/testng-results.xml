@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-03T18:11:20 IST" name="Default suite" finished-at="2025-01-03T18:11:34 IST" duration-ms="14456">
+    <groups>
+      <group name="PL2">
+        <method signature="RestAssured_TestCases_PL2.GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@55cb6996]" name="GetSignatoriesByDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+      </group> <!-- PL2 -->
+    </groups>
+    <test started-at="2025-01-03T18:11:20 IST" name="Default test" finished-at="2025-01-03T18:11:34 IST" duration-ms="14456">
+      <class name="testcases.RestAssured_TestCases_PL2">
+        <test-method signature="GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@55cb6996]" started-at="2025-01-03T18:11:20 IST" name="GetSignatoriesByDepartment" description="1. Send a GET request to get signatories by department.
+2. Verify the response status code is 200.
+3. Verify that the EmployeeId, FirstName, LastName are not null from the response validating that the data is present." finished-at="2025-01-03T18:11:34 IST" duration-ms="14159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSignatoriesByDepartment -->
+      </class> <!-- testcases.RestAssured_TestCases_PL2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
