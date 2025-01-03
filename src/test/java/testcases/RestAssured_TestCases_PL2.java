@@ -491,52 +491,56 @@ public class RestAssured_TestCases_PL2 {
 		profileDetailsWithIdResponse.getResponse().prettyPrint();
 	}
 
-	@Test(priority = 12, groups = { "PL2" }, description = "1. Send a GET request to add a new Department and fetch response details.\n"
-	        + "2. Verify the response status code is 200.\n" + "3. Verify Department code is not null. \n"
-	        + "3. Validate the response indicates successful display of department creation.")
+	@Test(priority = 12, groups = {
+			"PL2" }, description = "1. Send a GET request to add a new Department and fetch response details.\n"
+					+ "2. Verify the response status code is 200.\n" + "3. Verify Department code is not null. \n"
+					+ "3. Validate the response indicates successful display of department creation.")
 	public void addANewDepartment() throws Exception {
-	    String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	    apiUtil = new ApiUtil();
-	    
-	    // Generate random 5 letters department code
-	    Random random = new Random();
-	    StringBuilder code = new StringBuilder(5);
-	    for (int i = 0; i < 5; i++) {
-	        int index = random.nextInt(CHARACTERS.length());
-	        code.append(CHARACTERS.charAt(index));
-	    }
-	    String expectedDepartmentCode = code.toString();
-	    String expectedDepartmentName = "Department " + expectedDepartmentCode;
-	    
-	    Map<String, String> postData = new HashMap<>();
-	    postData.put("DepartmentCode", expectedDepartmentCode);
-	    postData.put("DepartmentName", expectedDepartmentName);
+		String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		apiUtil = new ApiUtil();
 
-	    // Send request and get response
-	    CustomResponse addANewDepartmentResponse = apiUtil.addDepartment("/Settings/Department", postData);
+		// Generate random 5 letters department code
+		Random random = new Random();
+		StringBuilder code = new StringBuilder(5);
+		for (int i = 0; i < 5; i++) {
+			int index = random.nextInt(CHARACTERS.length());
+			code.append(CHARACTERS.charAt(index));
+		}
+		String expectedDepartmentCode = code.toString();
+		String expectedDepartmentName = "Department " + expectedDepartmentCode;
 
-	    // Assert that the status code is 200 OK
-	    Assert.assertEquals(addANewDepartmentResponse.getStatusCode(), 200, "Status code should be 200 OK.");
+		// Construct the JSON payload as a string
+		String requestBody = String.format(
+				"{\n" + "    \"DepartmentCode\": \"%s\",\n" + "    \"DepartmentName\": \"%s\"\n" + "}",
+				expectedDepartmentCode, expectedDepartmentName);
 
-	    // Extract 'Results' from the response
-	    Map<String, Object> results = addANewDepartmentResponse.getMapResults();
-	    System.out.println("Results: " + results);
+		// Send request and get response
+		CustomResponse addANewDepartmentResponse = apiUtil.addDepartment("/Settings/Department", requestBody);
 
-	    // Extract fields from 'Results'
-	    Integer actualDepartmentId = (Integer) results.get("DepartmentId");
-	    String actualDepartmentCode = (String) results.get("DepartmentCode");
-	    String actualDepartmentName = (String) results.get("DepartmentName");
+		// Assert that the status code is 200 OK
+		Assert.assertEquals(addANewDepartmentResponse.getStatusCode(), 200, "Status code should be 200 OK.");
 
-	    // Assert that 'DepartmentId' is not null
-	    Assert.assertNotNull(actualDepartmentId, "The Department Id is null.");
-	    // Assert that the 'DepartmentCode' matches the expected code
-	    Assert.assertEquals(actualDepartmentCode, expectedDepartmentCode, "The Department Code does not match with the expected data.");
-	    // Assert that the 'DepartmentName' matches the expected name
-	    Assert.assertEquals(actualDepartmentName, expectedDepartmentName, "The Department Name does not match with the expected data.");
+		// Extract 'Results' from the response
+		Map<String, Object> results = addANewDepartmentResponse.getMapResults();
+		System.out.println("Results: " + results);
 
-	    // Print the full response for further verification if needed
-	    System.out.println("The following is the response after adding the department, Response:");
-	    addANewDepartmentResponse.getResponse().prettyPrint();
+		// Extract fields from 'Results'
+		Integer actualDepartmentId = (Integer) results.get("DepartmentId");
+		String actualDepartmentCode = (String) results.get("DepartmentCode");
+		String actualDepartmentName = (String) results.get("DepartmentName");
+
+		// Assert that 'DepartmentId' is not null
+		Assert.assertNotNull(actualDepartmentId, "The Department Id is null.");
+		// Assert that the 'DepartmentCode' matches the expected code
+		Assert.assertEquals(actualDepartmentCode, expectedDepartmentCode,
+				"The Department Code does not match with the expected data.");
+		// Assert that the 'DepartmentName' matches the expected name
+		Assert.assertEquals(actualDepartmentName, expectedDepartmentName,
+				"The Department Name does not match with the expected data.");
+
+		// Print the full response for further verification if needed
+		System.out.println("The following is the response after adding the department, Response:");
+		addANewDepartmentResponse.getResponse().prettyPrint();
 	}
 
 	@Test(priority = 13, groups = { "PL2" }, description = "1. Send a GET request to get the list of departments.\n"
